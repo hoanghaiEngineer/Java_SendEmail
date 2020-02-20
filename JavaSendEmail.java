@@ -45,10 +45,10 @@ public class JavaSendEmail extends HttpServlet {
 	public void todo() {
 		String result;
 		// Recipient's email ID needs to be mentioned.
-		String to = "hoanghai.itcmu@gmail.com";
+		String to = "to_email_name@gmail.com";
 
 		// Sender's email ID needs to be mentioned
-		String from = "hoanghai.itcmu@gmail.com";
+		String from = "from_email_name@gmail.com";
 
 		// Assuming you are sending email from localhost
 		String host = "smtp.gmail.com";
@@ -67,7 +67,7 @@ public class JavaSendEmail extends HttpServlet {
 		
 		Session mailSession = Session.getInstance(properties, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() { 
-				return new PasswordAuthentication("hoanghai.itcmu@gmail.com", "Hoanghai1991"); 
+				return new PasswordAuthentication("from_email_name@gmail.com", "from_email_password"); 
 				} 
 			});
 
